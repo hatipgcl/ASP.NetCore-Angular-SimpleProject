@@ -1,0 +1,31 @@
+<div class="container">
+    <button class="btn btn-primary mb-3" (click)="goToCreateCar()">Create Car</button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Plaque</th>
+          <th>Year</th>
+          <th>Inspection Date</th>
+          <th>Photo</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let car of cars">
+          <td>{{ car.id }}</td>
+          <td>{{ car.plaque }}</td>
+          <td>{{ car.year }}</td>
+          <td>{{ car.inspectionDate | date }}</td>
+          <td>
+            <img *ngIf="car.photoPath" [src]="car.photoPath" alt="Car Photo" style="max-width: 100px;">
+          </td>
+          <td>
+            <button class="btn btn-info me-2" (click)="goToUpdateCar(car.id)">Update</button>
+            <button class="btn btn-danger" (click)="deleteCar(car.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

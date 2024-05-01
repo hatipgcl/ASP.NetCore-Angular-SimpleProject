@@ -1,0 +1,62 @@
+.container {
+  max-width: 800px; /* Container genişliği */
+  margin: 0 auto; /* Ortala */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Mavi renk */
+  border-color: #007bff; /* Kenarlık rengi */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Hover efekti */
+  border-color: #0056b3; /* Hover efekti */
+}
+
+.btn-info {
+  background-color: #17a2b8; /* Turkuaz renk */
+  border-color: #17a2b8; /* Kenarlık rengi */
+}
+
+.btn-info:hover {
+  background-color: #138496; /* Hover efekti */
+  border-color: #138496; /* Hover efekti */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Kırmızı renk */
+  border-color: #dc3545; /* Kenarlık rengi */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Hover efekti */
+  border-color: #c82333; /* Hover efekti */
+}
+
+table {
+  width: 100%; /* Tablo genişliği */
+}
+
+th, td {
+  padding: 0.75rem; /* Hücre iç boşluğu */
+  text-align: left; /* Metni sola hizala */
+}
+
+thead th {
+  background-color: #f8f9fa; /* Başlık arkaplan rengi */
+  color: #000; /* Başlık metin rengi */
+  font-weight: bold; /* Kalın font */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa; /* Tek satırların arka plan rengi */
+}
+
+tbody tr:hover {
+  background-color: #e9ecef; /* Hover efekti */
+}
+
+img {
+  max-width: 100px; /* Fotoğrafın maksimum genişliği */
+  height: auto; /* Otomatik yükseklik */
+}

@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()" #carForm="ngForm">
+    <div>
+      <label for="plaque">Plaque:</label>
+      <input type="text" id="plaque" name="plaque" [(ngModel)]="newCar.plaque" required>
+    </div>
+    <div>
+      <label for="year">Year:</label>
+      <input type="number" id="year" name="year" [(ngModel)]="newCar.year" required>
+    </div>
+    <div>
+      <label for="inspectionDate">Inspection Date:</label>
+      <input type="date" id="inspectionDate" name="inspectionDate" [(ngModel)]="newCar.inspectionDate" required>
+    </div>
+    <div>
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo" (change)="onFileSelected($event)" accept="image/*">
+      </div>
+    <button type="submit" [disabled]="!carForm.valid">Add Car</button>
+  </form>
